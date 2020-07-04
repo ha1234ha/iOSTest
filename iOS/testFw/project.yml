@@ -1,0 +1,32 @@
+name: testFw
+options:
+  bundleIdPrefix: test.testFw
+  deploymentTarget:
+    iOS: 13.0
+  developmentLanguage: ja
+
+targets:
+  testFw:
+    type: framework
+    platform: iOS
+    sources: 
+      - testFw
+    settings:
+      base:
+        MARKETING_VERSION: 1.0.0
+        CURRENT_PROJECT_VERSION: 1
+        INFOPLIST_FILE: testFw/Info.plist
+        DEVELOPMENT_LANGUAGE: ja
+    scheme:
+      testTargets:
+        - testFwTests
+
+  testFwTests:
+    type: bundle.unit-test
+    platform: iOS
+    sources: testFwTests
+    settings:
+      base:
+        INFOPLIST_FILE: testFwTests/Info.plist
+    dependencies:
+      - target: testFwTests
