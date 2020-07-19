@@ -10,7 +10,8 @@ import Foundation
 
 
 public class test {
-    public class func testA() {
+    public class func testA() -> String {
         print("aaa")
+        return "fwText"
     }
 }

@@ -3,27 +3,20 @@
 
 workspace 'iOS.xcworkspace'
 
-project 'testApp/testApp.xcodeproj'
-project 'testFw/testFw.xcodeproj'
+pod 'Swinject'
+pod 'R.swift'
+pod 'SwiftLint'
 
 abstract_target 'iOS' do
 
     target 'testApp' do
     	project 'testApp/testApp.xcodeproj'
       use_frameworks!
-
-      pod 'Swinject'
-      pod 'R.swift'
-      pod 'SwiftLint'
     end
 
     target 'testFw' do
         project 'testFw/testFw.xcodeproj'
         use_frameworks!
-
-        pod 'Swinject'
-        pod 'R.swift'
-        pod 'SwiftLint'
     end
 
     post_install do |installer|
