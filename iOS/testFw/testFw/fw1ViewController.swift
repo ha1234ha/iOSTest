@@ -23,33 +23,38 @@ public class fw1ViewController: UIViewController {
     }
     
     
-    func testA() -> String {
+    public func testA() -> String {
         
+        let aaa: String
         #if STG
-        print("aaa STG")
-        return String("fwText STG " + testB())
+        print("fw STG")
+        aaa = String("fwText STG " + testB())
         #elseif DEMO
-        print("aaa DEMO")
-        return String("fwText DEMO " + testB())
+        print("fw DEMO")
+        aaa = String("fwText DEMO " + testB())
         #elseif PRD
-        print("aaa PRD")
-        return String("fwText PRD " + testB())
+        print("fw PRD")
+        aaa = String("fwText PRD " + testB())
         #else
-        print("aaa OHTER")
-        return String("fwText OTHER " + testB())
+        print("fw OHTER")
+        aaa = String("fwText OTHER " + testB())
         #endif
         
+        return aaa
     }
     
-    func testB() -> String {
+    public func testB() -> String {
         
+        let aaa: String
         #if DEBUG
-        print("aaa DEBUG")
-        return "fwText DEBUG"
+        print("fw DEBUG")
+        aaa = "fw DEBUG"
         #else
-        print("aaa RELEASE")
-        return "fwText RELEASE"
+        print("fw RELEASE")
+        aaa = "fw RELEASE"
         #endif
+        
+        return aaa
     }
     
     /*

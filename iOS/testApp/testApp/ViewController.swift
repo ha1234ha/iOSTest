@@ -55,32 +55,36 @@ class ViewController: UIViewController {
     
     
     func testA() -> String {
-        
+        let aaa:String
         #if STG
-        print("aaa STG")
-        return String("fwText STG " + testB())
+        print("app STG")
+        aaa = String("fwText STG " + testB())
         #elseif DEMO
-        print("aaa DEMO")
-        return String("fwText DEMO " + testB())
+        print("app DEMO")
+        aaa = String("fwText DEMO " + testB())
         #elseif PRD
-        print("aaa PRD")
-        return String("fwText PRD " + testB())
+        print("app PRD")
+        aaa = String("fwText PRD " + testB())
         #else
-        print("aaa OHTER")
-        return String("fwText OTHER " + testB())
+        print("app OHTER")
+        aaa = String("fwText OTHER " + testB())
         #endif
         
+        return aaa
     }
     
     func testB() -> String {
         
+        let aaa: String
         #if DEBUG
-        print("aaa DEBUG")
-        return "fwText DEBUG"
+        print("app DEBUG")
+        aaa = "fwText DEBUG"
         #else
-        print("aaa RELEASE")
-        return "fwText RELEASE"
+        print("app RELEASE")
+        aaa = "fwText RELEASE"
         #endif
+        
+        return aaa
     }
     
 }
