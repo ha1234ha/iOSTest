@@ -26,6 +26,18 @@
 		CF0864A624C41B0F00990FAD /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 904CE752D5DD07CD5F288785 /* LaunchScreen.storyboard */; };
 		CF0864A724C41B0F00990FAD /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 837D22208CF95030C3BB2DF1 /* Main.storyboard */; };
 		CF0864A924C41B0F00990FAD /* Pods_iOS_testApp.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7AE405E70108EC0200FF611D /* Pods_iOS_testApp.framework */; };
+		CFBFDC3424DFC1DD003B8400 /* testFw.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CFBFDC3324DFC1DD003B8400 /* testFw.framework */; };
+		CFBFDC3524DFC1DD003B8400 /* testFw.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = CFBFDC3324DFC1DD003B8400 /* testFw.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		CFBFDC3824DFC1E2003B8400 /* testFw.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CFBFDC3724DFC1E2003B8400 /* testFw.framework */; };
+		CFBFDC3924DFC1E2003B8400 /* testFw.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = CFBFDC3724DFC1E2003B8400 /* testFw.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		CFBFDC3C24DFC1E7003B8400 /* testFw.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CFBFDC3B24DFC1E7003B8400 /* testFw.framework */; };
+		CFBFDC3D24DFC1E7003B8400 /* testFw.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = CFBFDC3B24DFC1E7003B8400 /* testFw.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		CFBFDC4324DFC2A7003B8400 /* testApp_PRD.plist in Resources */ = {isa = PBXBuildFile; fileRef = CFBFDC4124DFC2A7003B8400 /* testApp_PRD.plist */; };
+		CFBFDC4424DFC2A7003B8400 /* testApp_PRD.plist in Resources */ = {isa = PBXBuildFile; fileRef = CFBFDC4124DFC2A7003B8400 /* testApp_PRD.plist */; };
+		CFBFDC4524DFC2A7003B8400 /* testApp_PRD.plist in Resources */ = {isa = PBXBuildFile; fileRef = CFBFDC4124DFC2A7003B8400 /* testApp_PRD.plist */; };
+		CFBFDC4624DFC2A7003B8400 /* testApp_STG.plist in Resources */ = {isa = PBXBuildFile; fileRef = CFBFDC4224DFC2A7003B8400 /* testApp_STG.plist */; };
+		CFBFDC4724DFC2A7003B8400 /* testApp_STG.plist in Resources */ = {isa = PBXBuildFile; fileRef = CFBFDC4224DFC2A7003B8400 /* testApp_STG.plist */; };
+		CFBFDC4824DFC2A7003B8400 /* testApp_STG.plist in Resources */ = {isa = PBXBuildFile; fileRef = CFBFDC4224DFC2A7003B8400 /* testApp_STG.plist */; };
 		DA0DD7AE123C89CE0A53EE10 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D19926CE208CBEB099F91459 /* AppDelegate.swift */; };
 /* End PBXBuildFile section */
 
@@ -46,8 +58,43 @@
 		};
 /* End PBXContainerItemProxy section */
 
+/* Begin PBXCopyFilesBuildPhase section */
+		CFBFDC3624DFC1DD003B8400 /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				CFBFDC3524DFC1DD003B8400 /* testFw.framework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CFBFDC3A24DFC1E2003B8400 /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				CFBFDC3924DFC1E2003B8400 /* testFw.framework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CFBFDC3E24DFC1E7003B8400 /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				CFBFDC3D24DFC1E7003B8400 /* testFw.framework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
 /* Begin PBXFileReference section */
-		0E499354500267491E6EA6C5 /* testApp_STG.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = testApp_STG.plist; sourceTree = "<group>"; };
 		207E18D9A7BBE18B4D08E07C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
 		232A939EBBA5EF25FBED2814 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		2AB792712C181401321440C9 /* Pods-iOS-testApp.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-iOS-testApp.release.xcconfig"; path = "Target Support Files/Pods-iOS-testApp/Pods-iOS-testApp.release.xcconfig"; sourceTree = "<group>"; };
@@ -60,9 +107,13 @@
 		C421FEF193B2AF741A88DAD8 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		C559B1D63F171008106BAEA9 /* testAppTests_STG.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = testAppTests_STG.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		CF08649D24C41AE500990FAD /* testApp_DEMO.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = testApp_DEMO.app; sourceTree = BUILT_PRODUCTS_DIR; };
-		CF08649E24C41AE500990FAD /* testApp_DEMO.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; name = testApp_DEMO.plist; path = /Users/oo/Desktop/src/ios/GitTest/iOS/testApp/testApp_DEMO.plist; sourceTree = "<absolute>"; };
 		CF0864AE24C41B0F00990FAD /* testApp_PRD.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = testApp_PRD.app; sourceTree = BUILT_PRODUCTS_DIR; };
-		CF0864AF24C41B0F00990FAD /* testApp_PRD.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; name = testApp_PRD.plist; path = /Users/oo/Desktop/src/ios/GitTest/iOS/testApp/testApp_PRD.plist; sourceTree = "<absolute>"; };
+		CFBFDC3324DFC1DD003B8400 /* testFw.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = testFw.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		CFBFDC3724DFC1E2003B8400 /* testFw.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = testFw.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		CFBFDC3B24DFC1E7003B8400 /* testFw.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = testFw.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		CFBFDC4024DFC27A003B8400 /* testApp_DEMO.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = testApp_DEMO.plist; sourceTree = "<group>"; };
+		CFBFDC4124DFC2A7003B8400 /* testApp_PRD.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = testApp_PRD.plist; sourceTree = "<group>"; };
+		CFBFDC4224DFC2A7003B8400 /* testApp_STG.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = testApp_STG.plist; sourceTree = "<group>"; };
 		D19926CE208CBEB099F91459 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		E18B696822C34CD2623DFA9E /* testAppUITests_STG.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = testAppUITests_STG.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		E7CBE90C477B9B044E079324 /* Pods-iOS-testApp.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-iOS-testApp.debug.xcconfig"; path = "Target Support Files/Pods-iOS-testApp/Pods-iOS-testApp.debug.xcconfig"; sourceTree = "<group>"; };
@@ -82,6 +133,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				3DC02C89CB5CF94D538DB2FF /* Pods_iOS_testApp.framework in Frameworks */,
+				CFBFDC3424DFC1DD003B8400 /* testFw.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -97,6 +149,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				CF08649824C41AE500990FAD /* Pods_iOS_testApp.framework in Frameworks */,
+				CFBFDC3824DFC1E2003B8400 /* testFw.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -105,6 +158,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				CF0864A924C41B0F00990FAD /* Pods_iOS_testApp.framework in Frameworks */,
+				CFBFDC3C24DFC1E7003B8400 /* testFw.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -145,6 +199,7 @@
 		B7E91C4693EF21BB1123C907 /* testApp */ = {
 			isa = PBXGroup;
 			children = (
+				CFBFDC3224DFC17C003B8400 /* plist */,
 				D19926CE208CBEB099F91459 /* AppDelegate.swift */,
 				A520C9E36AD0FC57EEECF3DB /* Assets.xcassets */,
 				904CE752D5DD07CD5F288785 /* LaunchScreen.storyboard */,
@@ -157,6 +212,9 @@
 		C0EB8CBBB16EA0D08BFDA55C /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				CFBFDC3B24DFC1E7003B8400 /* testFw.framework */,
+				CFBFDC3724DFC1E2003B8400 /* testFw.framework */,
+				CFBFDC3324DFC1DD003B8400 /* testFw.framework */,
 				7AE405E70108EC0200FF611D /* Pods_iOS_testApp.framework */,
 			);
 			name = Frameworks;
@@ -171,10 +229,17 @@
 				63424A3EA037D1DE42FE27B2 /* Products */,
 				4F01D6E8BA077E477A274014 /* Pods */,
 				C0EB8CBBB16EA0D08BFDA55C /* Frameworks */,
-				0E499354500267491E6EA6C5 /* testApp_STG.plist */,
-				CF08649E24C41AE500990FAD /* testApp_DEMO.plist */,
-				CF0864AF24C41B0F00990FAD /* testApp_PRD.plist */,
 			);
+			sourceTree = "<group>";
+		};
+		CFBFDC3224DFC17C003B8400 /* plist */ = {
+			isa = PBXGroup;
+			children = (
+				CFBFDC4124DFC2A7003B8400 /* testApp_PRD.plist */,
+				CFBFDC4224DFC2A7003B8400 /* testApp_STG.plist */,
+				CFBFDC4024DFC27A003B8400 /* testApp_DEMO.plist */,
+			);
+			path = plist;
 			sourceTree = "<group>";
 		};
 		D265AF7C8A7EC1CAA8632600 /* testAppUITests */ = {
@@ -232,6 +297,7 @@
 				B565ED2C460BC53FAB395A77 /* Resources */,
 				491D01257395EF89323A13C2 /* Frameworks */,
 				D892458B2F244FC2E006E923 /* [CP] Embed Pods Frameworks */,
+				CFBFDC3624DFC1DD003B8400 /* Embed Frameworks */,
 			);
 			buildRules = (
 			);
@@ -251,6 +317,7 @@
 				CF08649324C41AE500990FAD /* Resources */,
 				CF08649724C41AE500990FAD /* Frameworks */,
 				CF08649924C41AE500990FAD /* [CP] Embed Pods Frameworks */,
+				CFBFDC3A24DFC1E2003B8400 /* Embed Frameworks */,
 			);
 			buildRules = (
 			);
@@ -270,6 +337,7 @@
 				CF0864A424C41B0F00990FAD /* Resources */,
 				CF0864A824C41B0F00990FAD /* Frameworks */,
 				CF0864AA24C41B0F00990FAD /* [CP] Embed Pods Frameworks */,
+				CFBFDC3E24DFC1E7003B8400 /* Embed Frameworks */,
 			);
 			buildRules = (
 			);
@@ -321,6 +389,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				95341A5A1CFE666ED5CE95DB /* Assets.xcassets in Resources */,
+				CFBFDC4324DFC2A7003B8400 /* testApp_PRD.plist in Resources */,
+				CFBFDC4624DFC2A7003B8400 /* testApp_STG.plist in Resources */,
 				4F4099FA53C45C13E9DB60EC /* LaunchScreen.storyboard in Resources */,
 				AE2FC97EDEB864094AE1A098 /* Main.storyboard in Resources */,
 			);
@@ -331,6 +401,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				CF08649424C41AE500990FAD /* Assets.xcassets in Resources */,
+				CFBFDC4424DFC2A7003B8400 /* testApp_PRD.plist in Resources */,
+				CFBFDC4724DFC2A7003B8400 /* testApp_STG.plist in Resources */,
 				CF08649524C41AE500990FAD /* LaunchScreen.storyboard in Resources */,
 				CF08649624C41AE500990FAD /* Main.storyboard in Resources */,
 			);
@@ -341,6 +413,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				CF0864A524C41B0F00990FAD /* Assets.xcassets in Resources */,
+				CFBFDC4524DFC2A7003B8400 /* testApp_PRD.plist in Resources */,
+				CFBFDC4824DFC2A7003B8400 /* testApp_STG.plist in Resources */,
 				CF0864A624C41B0F00990FAD /* LaunchScreen.storyboard in Resources */,
 				CF0864A724C41B0F00990FAD /* Main.storyboard in Resources */,
 			);
@@ -577,7 +651,7 @@
 					"COCOAPODS=1",
 					"STG=1",
 				);
-				INFOPLIST_FILE = testApp_STG.plist;
+				INFOPLIST_FILE = "$(SRCROOT)/testApp/plist/testApp_STG.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -637,7 +711,7 @@
 					"COCOAPODS=1",
 					"DEMO=1",
 				);
-				INFOPLIST_FILE = testApp_DEMO.plist;
+				INFOPLIST_FILE = "$(SRCROOT)/testApp/plist/testApp_DEMO.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -664,7 +738,7 @@
 					"COCOAPODS=1",
 					"DEMO=1",
 				);
-				INFOPLIST_FILE = testApp_DEMO.plist;
+				INFOPLIST_FILE = "$(SRCROOT)/testApp/plist/testApp_DEMO.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -691,7 +765,7 @@
 					"COCOAPODS=1",
 					"PRD=1",
 				);
-				INFOPLIST_FILE = testApp_PRD.plist;
+				INFOPLIST_FILE = "$(SRCROOT)/testApp/plist/testApp_PRD.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -718,7 +792,7 @@
 					"COCOAPODS=1",
 					"PRD=1",
 				);
-				INFOPLIST_FILE = testApp_PRD.plist;
+				INFOPLIST_FILE = "$(SRCROOT)/testApp/plist/testApp_PRD.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -874,7 +948,7 @@
 					"COCOAPODS=1",
 					"STG=1",
 				);
-				INFOPLIST_FILE = testApp_STG.plist;
+				INFOPLIST_FILE = "$(SRCROOT)/testApp/plist/testApp_STG.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
